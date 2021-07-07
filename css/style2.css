@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Lato", sans-serif;
+}
+
+#opening-scene {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#opening-scene div h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 10rem;
+  color: maroon;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+#origins p {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.origin-map {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 1s ease-out;
+}
+
+.origin-map.fadein-up {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#india .col1 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-out;
+}
+
+#india .col2 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease-out;
+}
+
+#india .col1.fadein-left {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#india .col2.fadein-right {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+img {
+  width: 100%;
+}
+/* #opening-scene {
+  height: 100vh;
+  width: 100vw;
+} */
+
+/* section {
+  height: 100vh;
+  width: 100vw;
+}
+#opening-scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#india {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+.india-intro {
+  display: flex;
+  width: 1000px;
+}
+.india-intro div {
+  display: flex;
+  width: 30%;
+}
+#opening-scene div {
+  width: 800px;
+  text-align: center;
+}
+#opening-scene div h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  color: maroon;
+}
+#opening-scene div h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+#opening-scene div p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+} */
+/* section:nth-child(1) {
+  background-color: aqua;
+}
+section:nth-child(1) {
+  background-color: antiquewhite;
+} */
