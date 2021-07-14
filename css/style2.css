@@ -12,6 +12,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.tf-wrapper {
+  padding-bottom: 100px;
+}
+
 #opening-scene {
   height: 100vh;
   width: 100vw;
@@ -81,6 +85,15 @@ body {
 
 img {
   width: 100%;
+}
+
+.characters {
+  display: flex;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 20px;
 }
 /* #opening-scene {
   height: 100vh;
