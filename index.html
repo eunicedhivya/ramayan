@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, tween, tweenmax" />
+	<meta name="author"	content="Jan Paepke (www.janpaepke.de)" />
+	<title>Parallax Sections - Examples - ScrollMagic</title>
+    <link rel="stylesheet" href="css/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<ul id="menu"></ul>
+    <div class="tf-wrapper">
+        <div id="gsap-trigger" class="spacer s0"></div>
+        <section class="mainintro no-cover section">
+            <h1 id="maintitle">Ramayan</h1>
+            <p>Stories from around the world</p>
+            <div class="author">By
+                <a href="#" class="tippy" id="AA" aria-expanded="false">Pratap Ravishankar</a>,
+                <a href="#" class="tippy" id="DW" aria-expanded="false">Eunice Dhivya</a><br>and
+                <a href="#" class="tippy" id="JL" aria-expanded="false">Indhumathi K</a><br><br>
+                <span class="date">Published July 12, 2021</span>
+            </div>
+        </section>
+        <section id="parallax1" class="origin section" style="background-color: aliceblue;">
+            <h2 class="subtitle">Origin Story</h2>
+            <p>Ramayana originated from India and The Ramayana has spread to many Asian countries outside of India, including Burma, Indonesia, Cambodia, Laos, Philippines, Sri Lanka, Nepal, Thailand, Singapore, Malaysia, Japan, Mongolia, Vietnam and China. The original Valmiki version has been adapted or translated into various regional languages, which have often been marked more or less by plot twists and thematic adaptations.</p>
+            <div class="originmap">
+                <img src="img/world.svg" alt="">
+            </div>
+        </section>
+        <section class="origin section" id="india">
+            <div class="introsection">
+                <div class="introinfo">
+                    <h2 class="subtitle">Ramayan in India</h2>
+                    <p>Ramayana originated from India and The Ramayana has spread to many Asian countries outside of India, including Burma, Indonesia, Cambodia, Laos, Philippines, Sri Lanka, Nepal, Thailand, Singapore, Malaysia, Japan, Mongolia, Vietnam and China. The original Valmiki version has been adapted or translated into various regional languages, which have often been marked more or less by plot twists and thematic adaptations.</p>
+                </div>
+                <div class="originmap">
+                    <img src="img/world.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="origin section" id="indiaChar">
+            <div class="characters-section">
+                <div class="character-info">
+                    <h2 class="subtitle">Main Characters and storyline</h2>
+                    <p>Ramayana originated from India and The Ramayana has spread to many Asian countries outside of India, including Burma, Indonesia, Cambodia, Laos, Philippines, Sri Lanka, Nepal, Thailand, Singapore, Malaysia, Japan, Mongolia, Vietnam and China. The original Valmiki version has been adapted or translated into various regional languages, which have often been marked more or less by plot twists and thematic adaptations.</p>
+                </div>
+                <div class="list-of-characters">
+                    <div class="character">
+                        <img src="https://via.placeholder.com/300x550" alt="">
+                        <h3>Ram</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/300x550" alt="">
+                        <h3>Sita</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/300x550" alt="">
+                        <h3>Lakshman</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/300x550" alt="">
+                        <h3>Hanuman</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/300x550" alt="">
+                        <h3>Raavan</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="origin section" id="indiaAdp">
+            <div class="characters-section">
+                <div class="character-info">
+                    <h2 class="subtitle">Adaptation</h2>
+                    <p>Ramayana originated from India and The Ramayana has spread to many Asian countries outside of India, including Burma, Indonesia, Cambodia, Laos, Philippines, Sri Lanka, Nepal, Thailand, Singapore, Malaysia, Japan, Mongolia, Vietnam and China. The original Valmiki version has been adapted or translated into various regional languages, which have often been marked more or less by plot twists and thematic adaptations.</p>
+                </div>
+                <div class="list-of-characters">
+                    <div class="character">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <h3>Ram</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <h3>Sita</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <h3>Lakshman</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <h3>Hanuman</h3>
+                    </div>
+                    <div class="character">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <h3>Raavan</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+ 
+        // build scenes
+        new ScrollMagic.Scene({triggerElement: ".mainintro"})
+                        .setTween(".mainintro", 1, { opacity: 1}) // trigger a TweenMax.to tween
+						.addIndicators() // add indicators (requires plugin)
+                        // .setTween("#parallax1", {y: "80%", ease: Linear.easeNone})
+                        // .addIndicators()
+                        .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#parallax1",})
+                        .setTween("#parallax1", {y: "80%", ease: Linear.easeNone})
+                        .addIndicators()
+                        .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#parallax2"})
+                        .setTween("#parallax2", {y: "80%", ease: Linear.easeNone})
+                        .addIndicators()
+                        .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#india"})
+                        .setTween("#india", {y: "80%", ease: Linear.easeNone})
+                        .addIndicators()
+                        .addTo(controller);
+        
+        new ScrollMagic.Scene({triggerElement: "#indiaChar"})
+                        .setTween("#indiaChar", {y: "80%", ease: Linear.easeNone})
+                        .addIndicators()
+                        .addTo(controller);   
+        new ScrollMagic.Scene({triggerElement: "#indiaAdp"})
+                        .setTween("#indiaAdp", {y: "80%", ease: Linear.easeNone})
+                        .addIndicators()
+                        .addTo(controller);                        
+    </script>
+</body>
+</html>

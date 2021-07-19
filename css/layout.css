@@ -79,3 +79,14 @@ p {
   justify-content: center;
   column-gap: 20px;
 }
+
+/* Code by Indhu */
+.section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainintro {
+  opacity: 0.3;
+  transition: 0.5s;
+}
