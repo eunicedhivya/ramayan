@@ -58,7 +58,7 @@ p {
 /* .origin h2 {
   font-family: "Playfair Display", serif;
 } */
-.origin p {
+.origin p, .panel p {
   /* font-family: "Lato", sans-serif; */
   margin: 0 auto 25px auto;
   width: 100%;
@@ -91,7 +91,11 @@ p {
   overflow: hidden;
 }
 
-#indiaChar {
+/* #indiaChar {
   top: 15% !important;
 
+} */
+
+#indiaChar {
+  margin-bottom: 10px;
 }
