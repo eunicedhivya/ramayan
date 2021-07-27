@@ -160,6 +160,19 @@ section:nth-child(1) {
   -webkit-animation:bounceInDown 2s ease-out;
   animation:bounceInDown 2s ease-out;
 }
+.others .characters img, .othersAdp .list-of-characters .character img {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	-o-transition: 1s all ease-in-out;
+}
+
+.others .characters img.fadeIn, .othersAdp .list-of-characters .character img.fadeIn {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .others h2 {
   margin: 20px auto;
@@ -309,3 +322,4 @@ section:nth-child(1) {
       transform: none;
   }
 }
+

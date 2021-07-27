@@ -43,13 +43,13 @@ $(document).ready(function(){
     var scene4 = new ScrollMagic.Scene({
         triggerElement: "#others .characters",
     })
-    .setClassToggle("#others .characters", 'bounceInDown')
+    .setClassToggle("#others .characters img", 'fadeIn')
     .addTo(controller);
 
     var scene5 = new ScrollMagic.Scene({
-        triggerElement: "#indiaAdp .list-of-characters .character img",
+        triggerElement: "#indiaAdp .list-of-characters .character",
     })
-    .setClassToggle("#indiaAdp .list-of-characters .character img", 'rollIn')
+    .setClassToggle("#indiaAdp .list-of-characters .character img", 'fadeIn')
     .addTo(controller);
 
     var scene6 = new ScrollMagic.Scene({
@@ -81,12 +81,12 @@ $(document).ready(function(){
     var scene9 = new ScrollMagic.Scene({
         triggerElement: "#others-1 .characters",
     })
-    .setClassToggle("#others-1 .characters", 'bounceInDown')
+    .setClassToggle("#others-1 .characters img", 'fadeIn')
     .addTo(controller);
 
     var scene10 = new ScrollMagic.Scene({
-        triggerElement: "#combodiaAdp .list-of-characters .character img",
+        triggerElement: "#combodiaAdp .list-of-characters .character",
     })
-    .setClassToggle("#combodiaAdp .list-of-characters .character img", 'rollIn')
+    .setClassToggle("#combodiaAdp .list-of-characters .character img", 'fadeIn')
     .addTo(controller);
 });
