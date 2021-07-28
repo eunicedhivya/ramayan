@@ -169,6 +169,26 @@ section:nth-child(1) {
 	-o-transition: 1s all ease-in-out;
 }
 
+.others .characters img:nth-child(2), .othersAdp .list-of-characters .character:nth-child(2) img  {
+  -webkit-transition-delay: 1s; /* Chrome, Safari, Opera */
+  transition-delay: 1s;
+}
+
+.others .characters img:nth-child(3), .othersAdp .list-of-characters .character:nth-child(3) img  {
+  -webkit-transition-delay: 1.5s; /* Chrome, Safari, Opera */
+  transition-delay: 1.5s;
+}
+
+.others .characters img:nth-child(4), .othersAdp .list-of-characters .character:nth-child(4) img  {
+  -webkit-transition-delay: 2s; /* Chrome, Safari, Opera */
+  transition-delay: 2s;
+}
+
+.others .characters img:nth-child(5), .othersAdp .list-of-characters .character:nth-child(5) img  {
+  -webkit-transition-delay: 2.5s; /* Chrome, Safari, Opera */
+  transition-delay: 2.5s;
+}
+
 .others .characters img.fadeIn, .othersAdp .list-of-characters .character img.fadeIn {
   opacity: 1;
   transform: translateX(0);
