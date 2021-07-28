@@ -55,10 +55,10 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-.origin h2 {
-  /* font-family: "Playfair Display", serif; */
-}
-.origin p {
+/* .origin h2 {
+  font-family: "Playfair Display", serif;
+} */
+.origin p, .panel p {
   /* font-family: "Lato", sans-serif; */
   margin: 0 auto 25px auto;
   width: 100%;
@@ -79,3 +79,19 @@ p {
   justify-content: center;
   column-gap: 20px;
 }
+.panel {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  display: block,
+}
+
+#content-wrapper {
+  overflow: hidden;
+}
+
+/* #indiaChar {
+  top: 15% !important;
+
+} */
