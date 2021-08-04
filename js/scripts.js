@@ -33,6 +33,25 @@ $(document).ready(function(){
         colorTrigger: 'black'
     })
     .addTo(controller);
+
+    
+    var sc1 = new ScrollMagic.Scene({
+        triggerElement: ".marker"
+    })
+    .setClassToggle(".marker", 'fadeIn')
+
+    .addTo(controller);
+    
+    var sc2 = new ScrollMagic.Scene({
+        triggerElement: "svg.origin-map"
+    })
+    .setClassToggle("svg.origin-map", 'zoom-left')
+    .addIndicators({
+        name: 'Zoom',
+        colorTrigger: 'black'
+    })
+    .addTo(controller);
+
     
     var scene3 = new ScrollMagic.Scene({
         triggerElement: "#india"
