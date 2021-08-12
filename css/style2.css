@@ -13,7 +13,8 @@ body {
 }
 
 .tf-wrapper {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
+  padding-bottom: 200px;
   width: 100%;
   overflow: hidden;
 }
@@ -95,7 +96,7 @@ img {
   display: flex;
   max-width: 1000px;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin: 0 auto;
   column-gap: 20px;
 }
@@ -169,6 +170,16 @@ section:nth-child(1) {
 	-o-transition: 1s all ease-in-out;
 }
 
+.others .characters img {
+  width: 200px;
+  height: auto;
+}
+
+.othersAdp .list-of-characters .character img {
+  width: 100px;
+  height: auto;
+}
+
 .others .characters img:nth-child(2), .othersAdp .list-of-characters .character:nth-child(2) img {
   -webkit-transition-delay: 1s; /* Chrome, Safari, Opera */
   transition-delay: 1s;
@@ -224,6 +235,7 @@ section:nth-child(1) {
   display: flex;
   justify-content: center;
   column-gap: 20px;
+  align-items: baseline;
 }
 
 .othersAdp .list-of-characters .character img.rollIn {
