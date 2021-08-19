@@ -42,15 +42,15 @@ $(document).ready(function(){
 
     .addTo(controller);
     
-    var sc2 = new ScrollMagic.Scene({
-        triggerElement: "svg.origin-map"
-    })
-    .setClassToggle("svg.origin-map", 'zoom-left')
-    .addIndicators({
-        name: 'Zoom',
-        colorTrigger: 'black'
-    })
-    .addTo(controller);
+    // var sc2 = new ScrollMagic.Scene({
+    //     triggerElement: "svg.origin-map"
+    // })
+    // .setClassToggle("svg.origin-map", 'zoom-left')
+    // .addIndicators({
+    //     name: 'Zoom',
+    //     colorTrigger: 'black'
+    // })
+    // .addTo(controller);
 
     
     var scene3 = new ScrollMagic.Scene({
