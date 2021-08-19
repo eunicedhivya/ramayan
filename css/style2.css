@@ -258,7 +258,8 @@ section:nth-child(1) {
 }
 
 svg.origin-map {
-  width: 50%;
+  /* width: 50%; */
+  width: 70%;
   transform: scale(0.2);
   margin-bottom: 120px;
 }
